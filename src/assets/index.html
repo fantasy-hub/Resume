@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css">
+  <script src="./iconfont/iconfont.js"></script>
+  <style>
+    .icon {
+      width: 1em; height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: PingFang TC,Avenir Next,Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+      font-size: 16px;
+      background: #eee;
+    }
+    ul, li {
+      list-style: none;
+      
+    }
+    a {
+      text-decoration: none;
+      color: lightseagreen;
+
+    }
+    #ct {
+      display: flex;
+      width: 1060px;
+      height:1525px;
+      background-color: cornsilk;
+      margin: 0 auto;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+      border-radius: 4px;
+    }
+    .side {
+      /* background-color:peachpuff */
+      width: 300px;
+      background: linear-gradient(cornsilk, peachpuff);
+      padding: 15px 25px;
+      box-sizing: border-box;
+      color: slategrey;
+      line-height: 1.5;
+      font-weight: lighter;
+    }   
+    .main {
+      flex-grow: 1;
+      background-color: #fff;
+      padding: 25px 15px;
+    }
+
+    .title img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-left: 74px;
+      margin-top: 30px;
+    }
+    h1 {
+      letter-spacing: 15px;
+      margin-left: 85px;
+      /* font-size: 1.2rem; */
+    }
+    .sideinfo h3 {
+      margin-left: -18px;
+    }
+    .sideinfo .detail {
+      margin-top: -10px;
+      margin-left: -33px;
+      white-space: nowrap;
+    }
+    .sideinfo p {
+      line-height: 0.7;
+      margin-top: -5px;  
+      padding-bottom: 4px;
+    }
+    .sideinfo .detai {
+      margin-left: -40px;
+      white-space: normal;      
+    }
+    .sideinfo h4 {
+      padding-top: 60px;
+      margin-left: -24px;
+    }
+
+    .main ul, .main li, .main p, .main h1, .main h2, .main h3 {
+      padding: 0;
+      margin: 0;
+    }
+    .main .header {
+      padding-left: 5px;
+      border-bottom: 1px solid lightseagreen;
+    }
+    .main .header span {
+      font-size: 22px;
+      color: lightseagreen;
+    }
+
+    .main .content ul {
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+    .main .content h3 {
+      display: inline-block;
+    }
+    .main .content a {
+      font-size: 14px;
+    }
+    .main .content p {
+      padding-top: 7px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      font-size: 15px;
+      line-height: 1.4;
+      color:#616161;
+    }
+    .main .content li {
+      position: relative;
+      padding-left: 15px;
+    }
+    .main .content li:last-of-type {
+      padding-bottom: 10px;
+    }
+    .main .content .be {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: lightseagreen;
+      top: 8px;
+      left: -5px;
+    }
+    .main .content .af {
+      /* content: ''; */
+      position: absolute;
+      border-left: 1px solid lightseagreen;
+      height: 98px;
+      top: 15px;
+      left: -1px;
+    }
+    .main .content .fa {
+      height: 52px;
+    }
+
+    .main .s-content li {
+      padding-top: 10px;
+    }
+    .main .s-content .child li {
+      padding-left: 22px;
+      position: relative;
+    }
+    .main .s-content p {
+      padding-top: 7px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      font-size: 15px;
+      line-height: 1.4;
+      color:#616161;
+    }
+    .main .s-content .rig {
+      padding-left: 22px;
+    }
+    .main .s-content .be {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: lightseagreen;
+      top: 15px;
+      left: 4px;
+    }
+    .main .s-content .af {
+      position: absolute;
+      border-left: 1px solid lightseagreen;
+      height: 134px;
+      top: 15px;
+      left: 8px;
+    }
+    .main .s-content .fa {
+      height: 88px;
+    }
+    .main .s-content .abo {
+      position: relative;
+    }
+    .main .s-content .aff {
+      position: absolute;
+      border-left: 1px solid lightseagreen;
+      height: 67px;
+      top: 46px;
+      left: 8px;
+    }
+    .main .s-content .ffa {
+      height: 77px;
+    }
+  </style>
+</head>
+<body>
+  <div id="ct">
+    <div class="side">
+      <div class="title">
+        <img src="./timg.png" alt="">
+        <h1>李达</h1>
+      </div>
+      <ul class="sideinfo">
+        <li>
+          <h3><i class="iconfont icon-shuqian1"></i> Contact. 联系方式</h3>
+          <ul class="detail">
+            <li><i class="iconfont icon-htmal5icon04"></i> 电话：17601026236</li>
+            <li><i class="iconfont icon-wechat"></i> 微信：xylida</li>
+            <li><i class="iconfont icon-qq"></i> QQ：531730746</li>
+            <li><i class="iconfont icon-youjian"></i> 邮件：531730746@qq.com</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3><i class="iconfont icon-shuqian1"></i> Application. 应聘岗位</h3>
+          <p>前端工程师</p>
+        </li>
+
+        <li>
+          <h3><i class="iconfont icon-shuqian1"></i> Basic info. 基本信息</h3>
+          <ul class="detail detai">
+            <li>个人信息：男/26岁</li>
+            <li>毕业学校：吉林工商学院</li>
+            <li>Github：https://github.com/fantasy-hub</li>
+            <li></li>
+          </ul>
+        </li>
+
+        <h4>我是一个喜爱编程并沉醉其中的前端开发者。</br>目前正在寻找前端工程师岗位，希望能在贵司中发挥自己的专长，实现自己的价值，并得到成长!</h4>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="exp">
+        <div class="header">
+          <i class="iconfont icon-02"></i>
+          <span> Experience. 项目经验</span> 
+        </div>
+        <div class="content">
+          <ul>
+            <li>
+                <div class="be"></div>
+                <h3>个人在线简历</h3>
+                <a href="https://fantasy-hub.github.io/Resume/">https://fantasy-hub.github.io/Resume/</a>
+                <p>基于Vue 2.0，并应用了Vux和Vue-Router的一个设计优雅、内容完善的简历页面，结合Animate.css对页面进行动画增强，客户留言板通过阅读leancloud 文档，从而使用leancloud的JavaScript SDK进行数据存储，既避免了后端层设计又实现了存储功能，使用Webpack Gulp Bower改进工作流</p>
+                <div class="af"></div>
+            </li>
+            <li>
+              <div class="be"></div>
+              <h3>建行产品</h3>
+              <a href="https://fantasy-hub.github.io/jhproduct/index.html">https://fantasy-hub.github.io/jhproduct/index.html</a>
+              <p>基于Vue 2.0，使用了Vuex、Vue-Router、iView、Swiper。主页有四个路由，分别展示对应部分，金融产品与建荣家园有较多的详情内容</p>
+              <div class="af"></div>
+            </li>
+            <li>
+              <div class="be"></div>
+              <h3>老成都</h3>
+              <a href="https://fantasy-hub.github.io/laochengdu/index.html">https://fantasy-hub.github.io/laochengdu/index.html</a>
+              <p>使用jQuery操作DOM事件，数据定义在了一个JS文件中，导航条有丰富的内容展示，分为五个类别。类别下有详情页展示</p>
+              <div class="af"></div>
+            </li>
+            <li>
+              <div class="be"></div>
+              <h3>信用卡理财卡</h3>
+              <a href="https://fantasy-hub.github.io/xinyongka/index.html">https://fantasy-hub.github.io/xinyongka/index.html</a>
+              <p>主页定义较多的CSS动画操作，人脸识别页面调用摄像头已注释掉，识别后进入卡种推荐页，根据人脸识别的用户数据从7个页面中挑选1个。</p>
+              <div class="af"></div>
+            </li>
+            <li>
+              <div class="be"></div>
+              <h3>电信红包</h3>
+              <a href="https://fantasy-hub.github.io/dxhongbao/index.html">https://fantasy-hub.github.io/dxhongbao/index.html</a>
+              <p>点击红包弹出输入手机，验证后从3种样式中挑选1种进行渲染。在渲染页面中进行了序列帧动画。</p>
+              <div class="af"></div>
+            </li>            
+            <li>
+              <div class="be"></div>
+              <h3>百度下拉列表</h3>
+              <a href="https://github.com/fantasy-hub/Mycode/tree/master/vue-百度下拉列表">https://github.com/fantasy-hub/Mycode/tree/master/vue-百度下拉列表</a>
+              <p>基于Vue 2.0实现了仿百度搜索的下拉提示列表和搜索功能，在开发者工具中截获百度搜索jsonp接口，通过Vue-Vesource获取输入框中的关键词作为jsonp接口的关键词并发送交互请求，得到提示列表，并且可以通过上下键选择对应选项</p>
+              <div class="af"></div>
+            </li>
+            <li>
+              <div class="be"></div>
+              <h3>移动端新闻站</h3>
+              <a href="https://github.com/fantasy-hub/Mycode/tree/master/vue-mobilenews">https://github.com/fantasy-hub/Mycode/tree/master/vue-mobilenews</a>
+              <p>一个基于Vue 2.0的移动端新闻应用，运用vuex进行状态管理，通过Vue-Router进行路由匹配，首页是一个新闻轮播，下方是新闻列表，有用户登录和注册页面，通过axios配置loading效果，并且获取假数据到view层， 每条新闻可点击，并且显示了新闻时间标题内容等</p>
+              <div class="af"></div>
+            </li>
+
+            <!-- <li>
+              <div class="be"></div>
+              <h3>轮播组件</h3>
+              <a href="https://github.com/fantasy-hub/Mycode/tree/master/task27-jQuery%E5%AE%9E%E6%88%98-%E8%BD%AE%E6%92%AD">https://github.com/fantasy-hub/Mycode/tree/master/task27-jQuery实战-轮播</a>
+              <p>通过jQuery插件封装和原生JS对象封装的方法，实现了一个轮播组件，包括渐变轮播，滚动轮播，可自动播放，也可通过控制函数停止轮播，前进后退按钮和bullet按钮可以自由选择轮播图</p>
+              <div class="af"></div>
+            </li>
+            <li>
+              <div class="be"></div>
+              <h3>瀑布流布局</h3>
+              <a href="https://github.com/fantasy-hub/Mycode/tree/master/task30-jQuery%E5%AE%9E%E6%88%98-%E7%80%91%E5%B8%83%E6%B5%81">https://github.com/fantasy-hub/Mycode/tree/master/task30-jQuery实战-瀑布流</a>
+              <p>一个简单瀑布流新闻站，参考新浪相册api ，并通过原生 JavaScript 实现瀑布流的形式展现内容，当页面滚动时，实现了懒加载相册组</p>
+              <div class="af"></div>
+            </li>
+            <li>
+              <div class="be"></div>
+              <h3>原生JS库组件</h3>
+              <a href="https://github.com/fantasy-hub/JS-components">https://github.com/fantasy-hub/JS-components</a>
+              <p>实现了一个微型JavaScript库，其中包括对原生 JavaScript 数据类型及语言基础、DOM、事件、BOM、Ajax 等的操作和封装，并运用这个JavaScript库实现了表单输入交互、倒计时工具、轮播图、输入提示框、界面拖拽交互</p>
+              <div class="af"></div>
+            </li> -->
+            <li>
+              <div class="be"></div>
+              <h3>todolist</h3>
+              <a href="https://github.com/fantasy-hub/Mycode/tree/master/vue-todolist">https://github.com/fantasy-hub/Mycode/tree/master/vue-todolist</a>
+              <p>基于 Vue 2.0，阅读 leanCloud 的文档，通过使用其 JavaScript SDK，实现登陆以及注册功能，并且能够将用户的 todolist 保存在后端，下次用户登录后可以显示待办事项</p>
+              <div class="af fa"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="header">
+            <i class="iconfont icon-02"></i>
+            <span> Skill. 技能清单</span>           
+        </div>
+        <div class="s-content">
+          <ul>
+            <li>
+              <h3 class="h1">前端</h3>
+              <ul class="child">
+                <li>
+                  <div class="be"></div>
+                  <h3>HTML / CSS</h3>
+                  <p>熟悉W3C规范，对浏览器兼容处理有所了解</br>能够编写语义化、结构化的HTML，模块化的 SS，能够完成复杂布局，并完善细节</br>了解 Less/postCS /Autoprefixer等CSS 预处理和后处理工具和语法</br>熟悉CSS盒模型、浮动定位、BFC、负边距、flex 布局等基本概念的原理和应用</p>
+                  <div class="af"></div>
+                </li>
+                <li>
+                  <div class="be"></div>
+                  <h3>JavaScript</h3>
+                  <p>熟悉原生JavaScript，对闭包、原型链、跨域等原理有一定了解，能脱离类库独立完成代码</br>能运用模块化、和面向对象思想编程</br>了解RequireJS jQuery Vue.js 的使用</br>了解ECMAScript 6的模块、解构、函数简写等重要概念</p>
+                  <div class="af"></div>
+                </li>
+                <li>
+                  <div class="be"></div>
+                  <h3>其他</h3>
+                  <p>熟悉npm Webpack Bower Gulp前端自动化工具</br>能够使用PhotoShop工具进行简单的切图</br>了解前端安全、性能优化方面的一些知识</p>
+                  <div class="af fa"></div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="abo">
+              <h3 class="h1">后端</h3>
+              <p class="rig">了解Apache web服务器，能够使用wampServer等工具实现前后端mock数据</br>了解LeanCloud后端云服务，并能够使用其JavaScript SDK应用到项目</br>了解PHP，能够实现简单的后端数据处理代码，进行Ajax交互。</p>
+              <div class="aff"></div>
+            </li>
+            <li class="abo">
+              <h3 class="h1">其他</h3>
+              <p class="rig">学习能力强，一个知识点会借用 google、MDN、经典书籍、官网文档、知乎、大牛等将其了解透彻，并做好笔记，整理为博客分享</br>掌握Git代码管理工具的使用</br>能够熟练使用 Markdown 进行写作整理</p>
+              <div class="aff ffa"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  </script>
+</body>
+</html>
