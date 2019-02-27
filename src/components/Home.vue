@@ -122,7 +122,9 @@
             <span>QQ:</span>
             <p> 531730746</p>
             <span>Phone:</span>
-            <p> 17601026236</p>
+            <p>17601026236</p>
+            <span>WX:</span>
+            <p>17601026236</p>
           </address>
           <address>
             <span>I'm on social networks</span>
